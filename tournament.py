@@ -85,6 +85,7 @@ def swissPairings():
     swPairings = []
     index = 0
     while index < len(players) + 2:
+        # citation: from docs.python.org/2/tutorial/datastructures.html
         pair = players.pop()+players.pop()
         swPairings.append(pair)
         # print swPairings
