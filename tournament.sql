@@ -1,5 +1,4 @@
 -- Table definitions for the tournament project.
---
 
 
 -- Create Database
@@ -9,18 +8,18 @@ CREATE DATABASE tournament;
 -- Connect to database
 \c tournament
 
--- Create players Table
+-- Create Table to store players
 DROP TABLE players CASCADE;
 CREATE TABLE players (id SERIAL PRIMARY KEY,
                       name TEXT);
 
--- Create matches Table
+-- Create Table to store matches and results
 DROP TABLE matches CASCADE;
 CREATE TABLE matches (match_id SERIAL PRIMARY KEY,
                       winner INTEGER references players(id),
                       loser INTEGER references players(id));
 
--- Create a View to track our standings
+-- Create a View to track the standings
 DROP VIEW standings;
 CREATE VIEW standings AS
     SELECT players.id AS id,
