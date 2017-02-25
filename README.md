@@ -26,44 +26,31 @@ BurkhartFC@iCloud.com
 > that our application is running properly
 
 <h3><b>Instructions</b></h3>
-Git clone the repository at https://github.com/DrewBurkhart/swiss_tournament
+
+Git clone the repository
 <br>
-'''
-$ git clone https://github.com/DrewBurkhart/swiss_tournament
-'''
+> $ git clone https://github.com/DrewBurkhart/swiss_tournament
 
 Install PostgreSQL
 <br>
-'''
-$ brew install postgresql
-'''
+> $ brew install postgresql
 
 Install the necessary python libraries
 <br>
-'''
-$ pip install -r requirements.txt
-'''
+> $ pip install -r requirements.txt
 
 Launch PostgreSQL server
 <br>
-'''
-$ psql -d template1
-'''
+> $ psql -d template1
 
 Import SQL file to create DB's
 <br>
-'''
-$ \i tournament.sql
-'''
+> $ \i tournament.sql
 
 Back out of PostgreSQL with Keyboard Interrupt
 <br>
-'''
-$ ^C
-'''
+> $ ^C
 
 Run the unit tests by running tournament_test.py
 <br>
-'''
-$ python tournament_test.py
-'''
+> $ python tournament_test.py
