@@ -25,18 +25,21 @@ BurkhartFC@iCloud.com
 > Udacity file containing Unit Tests to verify
 > that our application is running properly
 
-<h3><b>Instructions<b></h3>
+<h3><b>Instructions</b></h3>
 Git clone the repository at https://github.com/DrewBurkhart/swiss_tournament
+<br>
 '''
 $ git clone https://github.com/DrewBurkhart/swiss_tournament
 '''
 
 Install the necessary python libraries
+<br>
 '''
 $ pip install -r requirements.txt
 '''
 
 Run the unit tests by running tournament_test.py
+<br>
 '''
 $ python tournament_test.py
 '''
